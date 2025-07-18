@@ -4,7 +4,11 @@ This project is created to help intermediate to amateur robotics developers to u
 
 ## Python APP Interface
 1. Serial com tab
-2. Forward kinematics tab
-3. Inverse kinematics tab
+   In this tab you can connect the STM32 to the python app via USB and you can configure the 'Com Port' and 'Baud Rate'
+3. Forward kinematics tab
+   In this tab you can give some joint angle input to get the tool position of the robot
+5. Inverse kinematics tab
+   In this tab you can give some toll position input to get the joint angle of the robot
 
 ## DH Parameter
+1. There are some example of
