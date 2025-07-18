@@ -2,7 +2,6 @@
 	6-DOF Arm Manipulator Formula Library
 	Author	: Alfonsus Giovanni Mahendra Putra
 	Date		: Februari 2025
-	Licensed Program
 */
 
 #ifndef ARMROBOT_MATH_H

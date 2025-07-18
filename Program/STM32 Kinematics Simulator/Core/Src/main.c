@@ -366,11 +366,6 @@ void receive_data(void){
 		}
 		else continue;
 	}
-	
-	// Reset Data Buffer
-	for(int i=0; i<sizeof(rx_buff); i++){
-		rx_buff[i] = 0x00;
-	}
 }
 
 /*--- SEND DATA FUNCTION ---*/
@@ -387,6 +382,10 @@ void reset_buffer(void){
 	
 	for(int i=0; i<28; i++){
 		received_data.payload_data[i] = 0x00;
+	}
+	
+	for(int i=0; i<sizeof(rx_buff); i++){
+		rx_buff[i] = 0x00;
 	}
 }
 

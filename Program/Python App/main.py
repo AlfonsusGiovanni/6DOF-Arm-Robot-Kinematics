@@ -1,3 +1,7 @@
+# 6-DOF Robot Simulator App
+# Author    : Alfonsus Giovannni
+# Date      : July 2025
+
 import tkinter as tk
 from tkinter import ttk
 import serial
@@ -28,11 +32,12 @@ class KinematicsApp:
         self.root.resizable(False, False)
 
         self.ser = None
+        self.data_to_send = [0] * 32
 
         self.serial_run = False
         self.serial_connected = False
-        self.com_port = 'COM13'  # Default Com Port
-        self.baud_rate = 9600   # Default Baud Rate
+        self.com_port = 'COM13'     # Default Com Port
+        self.baud_rate = 115200     # Default Baud Rate
 
         self.fk_entry_input = [0] * 6
         self.ik_entry_input = [0] * 6
@@ -77,11 +82,18 @@ class KinematicsApp:
                 self.ser = serial.Serial(port=self.com_port, baudrate=self.baud_rate, timeout=0.1)
                 self.serial_connected = True
 
-            data_to_send = [Data_Header.HEADER1, Data_Header.HEADER2, Data_Command.CONNECT_DEVICES]
-            self.ser.write(data_to_send)
+            data_frame = [Data_Header.HEADER1, Data_Header.HEADER2, Data_Command.CONNECT_DEVICES]
+            self.ser.write(data_frame)
 
         except Exception as e:
             self.append_text(f"[ERROR] {e}")
+
+    # Write serial data
+    def write_serial(self):
+        if self.data_to_send[0] != 0:
+            self.ser.write(self.data_to_send)
+            for i in len(self.data_to_send):
+                self.data_to_send[i] = 0x00
 
     # Read serial data
     def read_serial(self):
@@ -89,7 +101,7 @@ class KinematicsApp:
             try:
                 data = self.ser.read_all()
                 if len(data) > 0:
-                    print(data)
+                    #print(data)
                     if data[0] == Data_Header.HEADER1 and data[1] == Data_Header.HEADER2:
                         if data[2] == Data_Command.CONNECT_DEVICES:
                             data_char = [0] * 20
@@ -98,7 +110,7 @@ class KinematicsApp:
 
                             arr = np.array(data_char, dtype=np.uint8)
                             data_string = ''.join(arr.view('S1').astype(str))
-                            print(data_string)
+                            #print(data_string)
                             self.append_text(data_string)
 
                         elif data[2] == Data_Command.FK_RESULT:
@@ -152,8 +164,8 @@ class KinematicsApp:
 
         angle_bytes_array = struct.pack('<6f', *float_entry)
 
-        data_to_send = bytearray([Data_Header.HEADER1, Data_Header.HEADER2, Data_Command.CALC_FK]) + angle_bytes_array
-        self.ser.write(data_to_send)
+        data_frame = bytearray([Data_Header.HEADER1, Data_Header.HEADER2, Data_Command.CALC_FK]) + angle_bytes_array
+        self.ser.write(data_frame)
 
     # Send inverse kinematics data
     def send_ik_data(self):
@@ -164,8 +176,8 @@ class KinematicsApp:
 
         pos_bytes_array = struct.pack('<6f', *float_entry)
 
-        data_to_send = bytearray([Data_Header.HEADER1, Data_Header.HEADER2, Data_Command.CALC_IK]) + pos_bytes_array
-        self.ser.write(data_to_send)
+        data_frame = bytearray([Data_Header.HEADER1, Data_Header.HEADER2, Data_Command.CALC_IK]) + pos_bytes_array
+        self.ser.write(data_frame)
 
     # Serial com config window
     def com_window(self):
