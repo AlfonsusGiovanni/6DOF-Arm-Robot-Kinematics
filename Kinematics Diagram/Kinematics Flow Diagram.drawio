@@ -1,0 +1,141 @@
+<mxfile host="Electron" modified="2025-07-16T11:36:32.507Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.5.3 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="2BfjOyqFpxd0s_iPsRdT" version="24.5.3" type="device" pages="2">
+  <diagram id="l9GEc_9hzx0O128E22Er" name="Forward Kinematic">
+    <mxGraphModel dx="1050" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="140" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YNJO_1FRUv97qbcIdeYT-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ogr5Ga8vGF0G2J4RFf9z-1" target="Ogr5Ga8vGF0G2J4RFf9z-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ogr5Ga8vGF0G2J4RFf9z-1" value="Input Joint&lt;div&gt;Angles&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YNJO_1FRUv97qbcIdeYT-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ogr5Ga8vGF0G2J4RFf9z-2" target="Ogr5Ga8vGF0G2J4RFf9z-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ogr5Ga8vGF0G2J4RFf9z-2" value="DH Parameter" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YNJO_1FRUv97qbcIdeYT-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ogr5Ga8vGF0G2J4RFf9z-3" target="Ogr5Ga8vGF0G2J4RFf9z-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ogr5Ga8vGF0G2J4RFf9z-3" value="Transformation&lt;br&gt;Matrix&lt;div&gt;T0 - Tt&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YNJO_1FRUv97qbcIdeYT-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ogr5Ga8vGF0G2J4RFf9z-4" target="YNJO_1FRUv97qbcIdeYT-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ogr5Ga8vGF0G2J4RFf9z-4" value="Transformation&lt;br&gt;Matrix&lt;div&gt;T0-t&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ogr5Ga8vGF0G2J4RFf9z-5" value="Joint 1, 2, 3&lt;div&gt;Angles&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="840" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YNJO_1FRUv97qbcIdeYT-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="YNJO_1FRUv97qbcIdeYT-5" target="Ogr5Ga8vGF0G2J4RFf9z-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YNJO_1FRUv97qbcIdeYT-5" value="Transformation&lt;div&gt;Matrix Convertion&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Inverse Kinematic" id="sFt-P80bG-VpFn-MtFTh">
+    <mxGraphModel dx="1050" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="840" pageHeight="540" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OuxABju9JQFUO-aIlD7M-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="47jchbpbEH2PVb7cr_dt-1" target="47jchbpbEH2PVb7cr_dt-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="47jchbpbEH2PVb7cr_dt-1" value="Input Tool&lt;br&gt;Position" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OuxABju9JQFUO-aIlD7M-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="47jchbpbEH2PVb7cr_dt-2" target="47jchbpbEH2PVb7cr_dt-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OuxABju9JQFUO-aIlD7M-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="47jchbpbEH2PVb7cr_dt-2" target="47jchbpbEH2PVb7cr_dt-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="47jchbpbEH2PVb7cr_dt-2" value="Inverse&lt;br&gt;Transformation&lt;div&gt;Matrix&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OuxABju9JQFUO-aIlD7M-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="47jchbpbEH2PVb7cr_dt-3" target="47jchbpbEH2PVb7cr_dt-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="47jchbpbEH2PVb7cr_dt-3" value="Wirst Position" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OuxABju9JQFUO-aIlD7M-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="47jchbpbEH2PVb7cr_dt-4" target="47jchbpbEH2PVb7cr_dt-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="47jchbpbEH2PVb7cr_dt-4" value="Inverse Kinematics" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OuxABju9JQFUO-aIlD7M-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="47jchbpbEH2PVb7cr_dt-5" target="47jchbpbEH2PVb7cr_dt-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="47jchbpbEH2PVb7cr_dt-5" value="Joint 1, 2, 3&lt;div&gt;Angles&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="680" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OuxABju9JQFUO-aIlD7M-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="47jchbpbEH2PVb7cr_dt-6" target="47jchbpbEH2PVb7cr_dt-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="47jchbpbEH2PVb7cr_dt-6" value="Transformation&lt;div&gt;Matrix&lt;br&gt;T1, T2, T3&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OuxABju9JQFUO-aIlD7M-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="47jchbpbEH2PVb7cr_dt-7" target="47jchbpbEH2PVb7cr_dt-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="47jchbpbEH2PVb7cr_dt-7" value="&lt;div&gt;Inverted&lt;/div&gt;Tool Transformation&lt;div&gt;Matirx&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OuxABju9JQFUO-aIlD7M-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="47jchbpbEH2PVb7cr_dt-8" target="47jchbpbEH2PVb7cr_dt-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="47jchbpbEH2PVb7cr_dt-8" value="Inverted Transformation&lt;div&gt;Matrix T0-t&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OuxABju9JQFUO-aIlD7M-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="47jchbpbEH2PVb7cr_dt-9" target="47jchbpbEH2PVb7cr_dt-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="47jchbpbEH2PVb7cr_dt-9" value="DH Parameter" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OuxABju9JQFUO-aIlD7M-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="47jchbpbEH2PVb7cr_dt-10" target="OuxABju9JQFUO-aIlD7M-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="47jchbpbEH2PVb7cr_dt-10" value="Inverted Rotation&lt;div&gt;Matrix&lt;/div&gt;&lt;div&gt;R0-t&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OuxABju9JQFUO-aIlD7M-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="47jchbpbEH2PVb7cr_dt-11" target="47jchbpbEH2PVb7cr_dt-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="47jchbpbEH2PVb7cr_dt-11" value="Transformation&lt;div&gt;Matrix&lt;br&gt;T1-3&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OuxABju9JQFUO-aIlD7M-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="47jchbpbEH2PVb7cr_dt-13" target="OuxABju9JQFUO-aIlD7M-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="47jchbpbEH2PVb7cr_dt-13" value="Rotation Matrix&lt;div&gt;R1-3&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OuxABju9JQFUO-aIlD7M-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="47jchbpbEH2PVb7cr_dt-14" target="47jchbpbEH2PVb7cr_dt-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="47jchbpbEH2PVb7cr_dt-14" value="Rotation Matrix Convertion" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="47jchbpbEH2PVb7cr_dt-16" value="&lt;span style=&quot;font-weight: 700;&quot;&gt;Joint 4, 5, 6&lt;/span&gt;&lt;div style=&quot;font-weight: 700;&quot;&gt;Angles&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OuxABju9JQFUO-aIlD7M-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OuxABju9JQFUO-aIlD7M-18" target="47jchbpbEH2PVb7cr_dt-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OuxABju9JQFUO-aIlD7M-18" value="Rotation Matrix&lt;div&gt;R3-6&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
