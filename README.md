@@ -11,7 +11,7 @@ This module is created to help intermediate to amateur robotics developers to un
    In this tab you can give some toll position input to get the joint angle of the robot
 
 ## DH Parameter and Robot Kinematics
-There are some picture and diagram to get you understand more about DH parameter and 6-DOF Arm Robot kinematics.
+There are some picture and kinematics flow diagram to get you understand more about DH parameter and 6-DOF Arm Robot kinematics.
 
 ## Arm Robot Math Library
 You can use the arm robot library in this program to help you develop your 6-DOF Arm Robot Project. 
